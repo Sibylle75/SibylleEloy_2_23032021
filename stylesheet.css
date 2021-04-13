@@ -1,0 +1,64 @@
+/* Mobile*/
+/**************************/
+
+
+/** Mise en forme du header **/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+/* header logo */
+
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header__logo > img {
+   width: 100px;
+}
+
+.header__logo a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #0065FC;
+}
+
+/* header nav */
+
+.header__nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.header__nav > ul > li {
+    padding-bottom: 10px;
+    flex: 1;
+    width: 200px;
+    text-align: center;
+    border-bottom: solid #f2f2f2 3px;
+}
+
+.header__nav > ul > li > a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+   /*  border-bottom: solid rgb(224, 221, 221) 3px; */
+ 
+}
+ 
+.header__nav a:hover {
+    color: #0065FC;
+}
+
+.header__nav li:hover {
+    text-decoration: none ;
+    border-bottom: solid #0065FC 3px;
+}
