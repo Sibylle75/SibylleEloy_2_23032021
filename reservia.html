@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Ressources/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href="Ressources/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
         <title>Reservia</title>
     </head>
 
@@ -30,10 +31,30 @@
             <section class="search">
                 <h1 class="search__title">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="search__subtitle">En plein centre ville ou en pleine nature</p>
+
                 <div class="search__form">
-                    <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                    <i class="fas fa-map-marker-alt"></i>
                     <input class="search__input" type="text" value="Marseille, France">
-                    <i class="fa fa-search fa-xs" aria-hidden="true"></i>
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <div class="search__filters">
+                    <p>Filtres</p>
+                    <div class="search__filtercards">
+                        <div class="search__filtercards--item">
+                            <i class="fas fa-money-bill-wave"></i> Économique</div>
+                        <div class="search__filtercards--item">
+                            <i class="fas fa-child fa-lg"></i> Familial</div>
+                        <div class="search__filtercards--item">
+                            <i class="fas fa-heart"></i> Romantique</div>
+                        <div class="search__filtercards--item">
+                            <i class="fas fa-dog"></i> Animaux autorisés</div>
+                    </div>
+                </div>
+
+                <div class="search__information">
+                    <i class="fas fa-info fa-xs"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
         </main>

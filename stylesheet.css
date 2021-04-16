@@ -95,7 +95,7 @@ body {
     border: solid #f2f2f2 1px;
 }
 
-.fa-map-marker {
+i.fas.fa-map-marker-alt {
     position: absolute;
     left: 20px;
     background-color: #f2f2f2;
@@ -104,11 +104,100 @@ body {
     border-bottom-left-radius: 16px;
 }
 
-.fa-search {
+i.fas.fa-search {
     position: absolute;
     left: 300px;
     color: white;
     background-color:#0065FC;
     padding: 18px;
-    border-radius: 15px;
+    border-radius: 16px;
+}
+
+.search__filters {
+    position: relative;
+    top: 80px;
+    left: 20px;
+    height: 300px;
+}
+
+.search__filters > p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.search__filtercards {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    height: 190px;
+    font-size: 16px;
+}
+
+.search__filtercards--item {
+    display: flex;
+    align-items: center;
+    border: solid #dadce0 2px;
+    border-radius: 50px;
+    height: 45px;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+
+i.fas.fa-money-bill-wave {
+    color: #0065FC;
+    background-color: RGB(215, 227, 274);
+    margin-right: 10px;
+    margin-left: -2px;
+    border-radius: 50%;
+    padding: 16px;
+}
+
+i.fas.fa-child {
+    color: #0065FC;
+    background-color: RGB(215, 227, 274);
+    margin-right: 10px;
+    margin-left: -2px;
+    border-radius: 50%;
+    padding: 16px;
+}
+
+i.fas.fa-heart {
+    color: #0065FC;
+    background-color: RGB(215, 227, 274);
+    margin-right: 10px;
+    margin-left: -2px;
+    border-radius: 50%;
+    padding: 16px;
+}
+
+i.fas.fa-dog {
+    color: #0065FC;
+    background-color: RGB(215, 227, 274);
+    margin-right: 10px;
+    margin-left: -2px;
+    border-radius: 50%;
+    padding: 16px;
+}
+
+.search__information {
+    display: flex;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.fas.fa-info.fa-xs {
+    color: #0065FC;
+    border: solid #dadce0 1.5px;
+    border-radius: 50%;
+    padding: 9px 9px;
+    margin-right: 12px;
+    height: 3px;
+    width: 3px;
+    line-height: 0px;
+    font-size: 11px;
+}
+
+.search__information p {
+    margin-top: 4px;
 }
