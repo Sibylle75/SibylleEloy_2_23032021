@@ -1,12 +1,19 @@
 /* Mobile*/
 /**************************/
-
+i.fas {
+    color: #0065FC;
+}
 
 /** Mise en forme du header **/
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
 
 body {
     font-family: 'Raleway', sans-serif;
     width: 100%;
+    margin: 0;
 }
 
 /* header logo */
@@ -15,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 5px 20px 30px;
+    padding: 25px 20px 20px 30px;
 }
 
 .header__logo > img {
@@ -114,8 +121,8 @@ i.fas.fa-search {
 .search__filters {
     position: relative;
     top: 80px;
-    left: 20px;
     height: 300px;
+    padding-left: 20px;
 }
 
 .search__filters > p {
@@ -131,7 +138,7 @@ i.fas.fa-search {
     font-size: 16px;
 }
 
-.search__filtercards--item {
+.search__filtercards__item {
     display: flex;
     align-items: center;
     border: solid #dadce0 2px;
@@ -142,7 +149,6 @@ i.fas.fa-search {
 }
 
 i.fas.fa-money-bill-wave {
-    color: #0065FC;
     background-color: RGB(215, 227, 274);
     margin-right: 10px;
     margin-left: -2px;
@@ -151,7 +157,6 @@ i.fas.fa-money-bill-wave {
 }
 
 i.fas.fa-child {
-    color: #0065FC;
     background-color: RGB(215, 227, 274);
     margin-right: 10px;
     margin-left: -2px;
@@ -160,7 +165,6 @@ i.fas.fa-child {
 }
 
 i.fas.fa-heart {
-    color: #0065FC;
     background-color: RGB(215, 227, 274);
     margin-right: 10px;
     margin-left: -2px;
@@ -169,7 +173,6 @@ i.fas.fa-heart {
 }
 
 i.fas.fa-dog {
-    color: #0065FC;
     background-color: RGB(215, 227, 274);
     margin-right: 10px;
     margin-left: -2px;
@@ -185,7 +188,6 @@ i.fas.fa-dog {
 }
 
 .fas.fa-info.fa-xs {
-    color: #0065FC;
     border: solid #dadce0 1.5px;
     border-radius: 50%;
     padding: 9px 9px;
@@ -223,6 +225,7 @@ i.fas.fa-dog {
 
 .fas.fa-chart-line {
     font-size: 22px;
+    color: black;
 }
 
  /* Ranking cards */
@@ -392,6 +395,7 @@ i.fas.fa-dog {
     height: 140px;
     width: 335px;
     object-fit: cover;
+    object-position: 0px -10px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
