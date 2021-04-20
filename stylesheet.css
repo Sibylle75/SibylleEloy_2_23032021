@@ -495,10 +495,34 @@ i.fas.fa-dog {
         border-top: solid #0065FC 2px;
         border-bottom: none;
     }
-    
 
+    .search__title {
+        margin-left: 50px;
+    }
 
+    .search__subtitle {
+        margin-left: 50px;
+    }
 
+    .search__form {
+        position: absolute;
+        left: 30px;
+        top: 225px;
+    }
+
+    .search__filters {
+        height: 140px;
+        display: flex;
+        padding-left: 50px;
+    }
+
+    .search__filters > p {
+        padding-right: 30px;
+    }
+
+    .search__information {
+        margin-left: 50px;
+    }
 
 
 }
