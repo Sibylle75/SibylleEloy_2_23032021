@@ -1,5 +1,6 @@
-/* Mobile*/
+/* Mobile */
 /**************************/
+
 i.fas {
     color: #0065FC;
 }
@@ -452,4 +453,52 @@ i.fas.fa-dog {
 
 .footer__nav li:hover {
     text-decoration: none ;
+}
+
+
+/**************************/
+
+
+
+/* Desktop */
+/**************************/
+
+
+@media screen and (min-width: 1024px) {
+
+    .header__logo {
+        padding: 40px 50px 20px 50px;
+        margin-top: 2px;
+    }
+
+    .header__nav {
+        position: absolute;
+        top: -16px;
+        left: 620px;
+    }
+
+    .header__nav > ul > li {
+        padding-top: 55px;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-bottom: none;
+        width: 105px;
+       
+    }
+
+    .header__nav a:hover {
+        color: #0065FC;
+    }
+    
+    .header__nav li:hover {
+        text-decoration: none ;
+        border-top: solid #0065FC 2px;
+        border-bottom: none;
+    }
+    
+
+
+
+
+
 }
