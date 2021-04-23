@@ -207,6 +207,7 @@ i.fas.fa-dog {
 
 .search__information p {
     margin-top: 4px;
+    margin-bottom: 35px;
 }
 
 /*********************************/
@@ -238,7 +239,7 @@ i.fas.fa-dog {
  /* Ranking cards */
 
 .ranking__cards {
-    padding-bottom: 25px;
+    padding-bottom: 6%;
 }
 
 .ranking__card {
@@ -301,8 +302,9 @@ i.fas.fa-dog {
 
 .hebergements > h1 {
     font-size: 22px;
-    padding: 40px 20px 0px 20px;
-    margin-top: 0;
+    padding: 5% 10% 0% 6%;
+    margin-top: 0px;
+    /*padding: 40px 20px 0px 20px;*/
 }
 
 .hebergements__cards {
@@ -360,11 +362,12 @@ i.fas.fa-dog {
 .hebergements > p {
     font-size: 18px;
     font-weight: bold;
-    margin-top: 10px;
     margin-bottom: 0;
+    /*margin-top: 10px;
     margin-bottom: 0px;
     padding-left: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 30px;*/
+    padding: 0% 10% 5% 6%;
 }
 
 
@@ -422,26 +425,26 @@ i.fas.fa-dog {
 }
 
 .footer__nav {
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
-.footer__nav > h3 {
+.footer__nav__list > h3 {
     font-size: 18px;
     margin: 0;
     padding: 30px 20px 5px 20px;
 }
 
-.footer__nav  > ul {
+.footer__nav__list  > ul {
     list-style-type: none;
     padding-left: 10px;
 }
 
-.footer__nav > ul > li {
+.footer__nav__list > ul > li {
     padding-left: 10px;
     padding-bottom: 10px;
 }
 
-.footer__nav > ul > li > a {
+.footer__nav__list > ul > li > a {
     font-size: 16px;
     color: black;
     text-decoration: none;
@@ -464,7 +467,7 @@ i.fas.fa-dog {
 /**************************/
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
 
     .header__logo {
         padding: 40px 50px 20px 50px;
@@ -523,6 +526,148 @@ i.fas.fa-dog {
     .search__information {
         margin-left: 50px;
     }
+
+    .hebergementslist {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1500px;
+        margin-right: 20px;
+    }
+
+    .hebergements {
+        width: 70%;
+        max-width: 1300px;
+        margin-left: 50px;
+        border-radius: 3%/4%;
+        background-color: #f2f2f2;
+    }
+
+    .hebergements > h1 {
+        margin-top: 0;
+    }
+
+    .hebergements__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 10px 20px;
+    }
+
+    .hebergements__card {
+        width: 240px;
+    }
+
+    .hebergementscard__img > img {
+        width: 240px;
+    }
+
+    .ranking {
+        width: 30%;
+        max-width: 400px;
+        border-radius: 5% / 3%;
+        margin: 0 30px 0 20px;
+    }
+
+    .ranking__card {
+        margin-bottom: 30px;
+    }
+
+    .activites {
+        background-color: white;
+        max-width: 1500px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .activites > h1 {
+        padding: 70px 17px 0px 30px;
+        margin-bottom: 0;
+    }
+
+    .activites__cards {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 22%;
+        max-height: 480px;
+        gap: 10px 30px;
+        padding: 30px 30px;
+    }
+
+    .activitescard__img > img {
+        width: 100%;
+    }
+
+    .c1 {
+        height: 435px;
+    }
+
+    .c1 > .activitescard__img > img {
+        height: 390px;
+        object-position: -170px -10px;
+    }
+
+    .c2 {
+        height: 230px;
+    }
+
+    .c2 > .activitescard__img > img {
+        height: 180px;
+    }
+
+    .c3 {
+        height: 170px;
+    }
+
+    .c3 > .activitescard__img > img {
+        height: 115px;
+    }
+
+    .c4 {
+        height: 435px;
+    }
+
+    .c4 > .activitescard__img > img {
+        height: 390px;
+        object-position: -170px -10px;
+    }
+
+   .c5 {
+       height: 200px;
+   }
+
+   .c5 > .activitescard__img > img {
+       height: 145px;
+   }
+
+   .c6 {
+    height: 200px;
+    }
+
+    .c6 > .activitescard__img > img {
+        height: 145px;
+    }
+
+    .c1 > .activitescard__content > h2 {
+        margin-top: 5px;
+    }
+
+    .c4 > .activitescard__content > h2 {
+        margin-top: 5px;
+    }
+
+    .footer__nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin-left: 10px;
+        padding-top: 20px;
+    }
+
+
+
+
 
 
 }
