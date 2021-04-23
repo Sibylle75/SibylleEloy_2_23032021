@@ -215,13 +215,14 @@ i.fas.fa-dog {
 
 .ranking {
     background-color: #f2f2f2;
+    max-width: 375px;
 }
 
 .ranking__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 8%;
     margin-right: 20px;
     padding-top: 20px;
 }
@@ -246,9 +247,11 @@ i.fas.fa-dog {
     display: flex;
     margin: 10px 20px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 18px;
     padding: 5px;
     height: 135px;
+    max-width: 330px;
+    min-width: 260px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -260,8 +263,8 @@ i.fas.fa-dog {
     height: 135px;
     width: 130px;
     object-fit: cover;
-    border-bottom-left-radius: 20px ;
-    border-top-left-radius: 20px;
+    border-bottom-left-radius: 14px ;
+    border-top-left-radius: 14px;
 }
 
 .rankingcard__content > h2 {
@@ -298,11 +301,12 @@ i.fas.fa-dog {
 .hebergements {
     background-color: #fafbfc;
     margin: 0;
+    max-width: 375px;
 }
 
 .hebergements > h1 {
     font-size: 22px;
-    padding: 5% 10% 0% 6%;
+    padding: 5% 10% 0% 4%;
     margin-top: 0px;
     /*padding: 40px 20px 0px 20px;*/
 }
@@ -324,6 +328,7 @@ i.fas.fa-dog {
     margin-bottom: 12px;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
     height: 200px;
+    width: 325px;
 }
 
 .hebergementscard__img {
@@ -375,6 +380,7 @@ i.fas.fa-dog {
 
 .activites {
     background-color: #fafbfc;
+    max-width: 375px;
 }
 
 .activites > h1 {
@@ -461,29 +467,29 @@ i.fas.fa-dog {
 
 /**************************/
 
-
-
 /* Desktop */
 /**************************/
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
 
     .header__logo {
-        padding: 40px 50px 20px 50px;
+        padding: 40px 70px 20px 50px;
         margin-top: 2px;
     }
 
     .header__nav {
         position: absolute;
-        top: -16px;
-        left: 620px;
+        right: 260px;
+        top: 3%;
+        width: 8em;
+        margin-top: -2.5em;
     }
 
     .header__nav > ul > li {
         padding-top: 55px;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
         border-bottom: none;
         width: 105px;
        
@@ -527,29 +533,35 @@ i.fas.fa-dog {
         margin-left: 50px;
     }
 
+    .ranking__title > h1 {
+        margin-bottom: 20px;
+    }
+
     .hebergementslist {
         display: flex;
         flex-direction: row-reverse;
-        max-width: 1500px;
+        justify-content: space-evenly;
+        max-width: 1600px;
         margin-right: 20px;
     }
 
     .hebergements {
         width: 70%;
-        max-width: 1300px;
-        margin-left: 50px;
+        max-width: 1000px;
+        margin-left: 4%;
         border-radius: 3%/4%;
         background-color: #f2f2f2;
     }
 
     .hebergements > h1 {
-        margin-top: 0;
+        margin: 0;
+        padding: 4% 8% 3% 4%;
     }
 
     .hebergements__cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 10px 20px;
     }
 
@@ -574,7 +586,7 @@ i.fas.fa-dog {
 
     .activites {
         background-color: white;
-        max-width: 1500px;
+        max-width: 1600px;
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -665,9 +677,57 @@ i.fas.fa-dog {
         padding-top: 20px;
     }
 
+}
+
+/* Tablet */
+/**************************/
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+    .header__nav li:hover {
+        border-top: solid #0065FC 3px;
+    }
 
 
+    .ranking {
+        max-width: 400px;
+        border-radius: 5% / 2%;
+        margin: 0 30px 0 20px;
+        width: 45%;
+    }
 
+    .hebergements {
+        width: 76%;
+        border-radius: 3%/2%;
+    }
+
+    .hebergements > h1 {
+        padding: 7% 8% 3% 4%;
+    }
+
+    .activites {
+        margin-right: 50px;
+    }
+
+    .c4 > .activitescard__content > h2 {
+        margin-top: -6px;
+    }
+        
+    .c2 > .activitescard__img > img {
+        object-position: 1px -75px;
+    }
+
+    .c5 > .activitescard__img > img {
+        object-position: 0px 13px;
+    }
+
+    .c6 > .activitescard__img > img {
+        object-position: 2px -3px;
+    }
+
+    .footer__nav {
+        margin-right: 60px;
+    }
 
 
 }
