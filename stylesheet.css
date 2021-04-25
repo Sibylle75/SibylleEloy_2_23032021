@@ -471,7 +471,7 @@ i.fas.fa-dog {
 /**************************/
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
 
     .header__logo {
         padding: 40px 70px 20px 50px;
@@ -682,7 +682,7 @@ i.fas.fa-dog {
 /* Tablet */
 /**************************/
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
     .header__nav li:hover {
         border-top: solid #0065FC 3px;
@@ -714,15 +714,21 @@ i.fas.fa-dog {
     }
         
     .c2 > .activitescard__img > img {
-        object-position: 1px -75px;
+        object-position: 1px -100px;
+        height: 175px;
     }
 
     .c5 > .activitescard__img > img {
-        object-position: 0px 13px;
+        object-position: 0px 0px;
+        height: 150px;
     }
 
-    .c6 > .activitescard__img > img {
-        object-position: 2px -3px;
+    .c5 > .activitescard__content > h2 {
+        margin-top: 3px;
+    }
+
+    .c6 > .activitescard_img > img {
+        object-position: 2px -13px;
     }
 
     .footer__nav {
