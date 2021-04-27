@@ -11,6 +11,10 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     width: 100%;
@@ -139,9 +143,9 @@ i.fas.fa-search {
 
 .search__filtercards {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     font-weight: bold;
-    height: 190px;
     font-size: 16px;
 }
 
@@ -151,8 +155,9 @@ i.fas.fa-search {
     border: solid #dadce0 2px;
     border-radius: 50px;
     height: 45px;
-    padding-right: 20px;
-    margin-right: 10px;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 i.fas.fa-money-bill-wave {
@@ -215,32 +220,29 @@ i.fas.fa-dog {
 
 .ranking {
     background-color: #f2f2f2;
-    max-width: 375px;
+    padding-top: 1rem;
 }
 
 .ranking__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 8%;
-    margin-right: 20px;
-    padding-top: 20px;
-}
-
-.ranking__title > h1 {
-    font-size: 22px;
-    margin-bottom: 13px;
+    margin: auto;
+    width: 330px;
 }
 
 .fas.fa-chart-line {
     font-size: 22px;
     color: black;
+    position: relative;
+    left: 310px;
+    top: -50px;
 }
 
  /* Ranking cards */
 
 .ranking__cards {
     padding-bottom: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .ranking__card {
@@ -267,6 +269,12 @@ i.fas.fa-dog {
     border-top-left-radius: 14px;
 }
 
+.rankingcard__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .rankingcard__content > h2 {
     font-size: 16px;
     padding-left: 20px;
@@ -279,7 +287,7 @@ i.fas.fa-dog {
 }
 
 .ranking__score {
-    margin-top: 35px;
+
 }
 
 .stars-active {
@@ -300,15 +308,19 @@ i.fas.fa-dog {
 
 .hebergements {
     background-color: #fafbfc;
-    margin: 0;
-    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hebergements > h1 {
     font-size: 22px;
-    padding: 5% 10% 0% 4%;
-    margin-top: 0px;
-    /*padding: 40px 20px 0px 20px;*/
+    margin-left: -3rem;
+    margin-top: 2rem;
+}
+
+.hebergements > p {
+    margin-left: -13rem;
 }
 
 .hebergements__cards {
@@ -380,18 +392,21 @@ i.fas.fa-dog {
 
 .activites {
     background-color: #fafbfc;
-    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .activites > h1 {
     font-size: 22px;
-    padding: 25px 20px 0px 20px;
-    margin-top: 0;
+    margin-left: -8rem;
+    margin-top: 2rem;
 }
 
 .activites__cards {
     padding: 30px 20px;
     margin-top: -5px;
+    max-width: 335px;
 }   
 
 .activites__cards > a {
