@@ -486,7 +486,7 @@ i.fas.fa-dog {
 /**************************/
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 
     .header__logo {
         padding: 40px 70px 20px 50px;
@@ -548,56 +548,70 @@ i.fas.fa-dog {
         margin-left: 50px;
     }
 
-    .ranking__title > h1 {
-        margin-bottom: 20px;
+    .ranking {
+        grid-column: 2;
+        grid-row: 1;
+        border-radius: 20px;
+        padding-top: 1.5rem;
     }
+
+    .ranking__title {
+        margin-bottom: -2rem;
+
+    }
+
+    .ranking__cards {
+        padding-bottom: 0;
+    }
+
+    .ranking__card {
+        margin-bottom: 1rem;
+    }
+
 
     .hebergementslist {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-evenly;
-        max-width: 1600px;
-        margin-right: 20px;
+        display: grid;
+        grid-template-columns: 1fr max(380px, 30%);
+        margin-right: 1.5rem;
     }
+
 
     .hebergements {
-        width: 70%;
-        max-width: 1000px;
         margin-left: 4%;
-        border-radius: 3%/4%;
+        border-radius: 20px;
         background-color: #f2f2f2;
+        align-items: flex-start;
+        margin-right: 2rem;
     }
 
-    .hebergements > h1 {
-        margin: 0;
-        padding: 4% 8% 3% 4%;
+    .hebergements__title {
+        margin-left: 2.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .hebergements > p {
+        margin-left: 5%;
+        padding: 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     .hebergements__cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 10px 20px;
+        justify-content: space-evenly;
+        padding: 0;
     }
 
     .hebergements__card {
         width: 240px;
+        margin: 7px;
     }
 
     .hebergementscard__img > img {
         width: 240px;
     }
 
-    .ranking {
-        width: 30%;
-        max-width: 400px;
-        border-radius: 5% / 3%;
-        margin: 0 30px 0 20px;
-    }
-
-    .ranking__card {
-        margin-bottom: 30px;
-    }
 
     .activites {
         background-color: white;
@@ -695,7 +709,7 @@ i.fas.fa-dog {
 }
 
 /* Tablet */
-/**************************/
+/**************************
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -751,4 +765,4 @@ i.fas.fa-dog {
     }
 
 
-}
+}*/
