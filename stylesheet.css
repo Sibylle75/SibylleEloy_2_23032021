@@ -100,13 +100,13 @@ body {
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    padding: 15px ;
+    padding: 15px;
     width: 220px;
     border: solid #f2f2f2 1px;
 }
 
 .search__input:focus {
-    outline: none !important;
+    outline: none;
     border: solid #f2f2f2 1px;
 }
 
@@ -208,7 +208,6 @@ i.fas.fa-dog {
     padding: 9px 9px;
     margin-right: 12px;
     height: 3px;
-    width: 3px;
     line-height: 0px;
     font-size: 11px;
 }
@@ -287,10 +286,6 @@ i.fas.fa-dog {
     font-size: 14px;
     padding-left: 20px;
     margin-top: -5px;
-}
-
-.ranking__score {
-
 }
 
 .stars-active {
@@ -429,7 +424,7 @@ i.fas.fa-dog {
     height: 140px;
     width: 335px;
     object-fit: cover;
-    object-position: 0px -10px;
+    object-position: 1px -10px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -616,7 +611,7 @@ i.fas.fa-dog {
 
     .hebergementslist {
         display: grid;
-        grid-template-columns: 1fr max(380px, 30%);
+        grid-template-columns: 1fr minmax(380px, 30%);
         margin-right: 30px;
         margin-left: 5px;
     }
@@ -631,7 +626,7 @@ i.fas.fa-dog {
     }
 
     .hebergements__title {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
         margin-top: 1.5rem;
     }
 
@@ -675,10 +670,11 @@ i.fas.fa-dog {
 
     .activites__cards {
         display: flex;
-        justify-content: space-around;
         flex-direction: column;
+        justify-content: space-around;
         flex-wrap: wrap;
         width: 22%;
+        height: 480px;
         max-height: 480px;
         gap: 10px 30px;
         padding: 30px 30px;
@@ -703,6 +699,7 @@ i.fas.fa-dog {
 
     .c2 > .activitescard__img > img {
         height: 180px;
+        object-position: Opx -100px;
     }
 
     .c3 {
@@ -757,6 +754,7 @@ i.fas.fa-dog {
         justify-content: space-between;
         max-width: 1100px;
         margin-left: 10px;
+        margin-right: 100px;
         padding-top: 20px;
     }
 
@@ -771,7 +769,7 @@ i.fas.fa-dog {
     }
 
     .hebergements__title {
-        margin-left: 3rem;
+        margin-left: 1rem;
     }
 
     .activites {
@@ -780,62 +778,13 @@ i.fas.fa-dog {
     }
 }
 
+@media screen and (min-width: 1440px) {
 
-/* Tablet */
-/**************************
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-    .header__nav li:hover {
-        border-top: solid #0065FC 3px;
-    }
-
-
-    .ranking {
-        max-width: 400px;
-        border-radius: 5% / 2%;
-        margin: 0 30px 0 20px;
-        width: 45%;
-    }
-
-    .hebergements {
-        width: 76%;
-        border-radius: 3%/2%;
-    }
-
-    .hebergements > h1 {
-        padding: 7% 8% 3% 4%;
+    .hebergements__title {
+        margin-left: 3rem;
     }
 
     .activites {
-        margin-right: 50px;
+        margin-right: -20px;
     }
-
-    .c4 > .activitescard__content > h2 {
-        margin-top: -6px;
-    }
-        
-    .c2 > .activitescard__img > img {
-        object-position: 1px -100px;
-        height: 175px;
-    }
-
-    .c5 > .activitescard__img > img {
-        object-position: 0px 0px;
-        height: 150px;
-    }
-
-    .c5 > .activitescard__content > h2 {
-        margin-top: 3px;
-    }
-
-    .c6 > .activitescard_img > img {
-        object-position: 2px -13px;
-    }
-
-    .footer__nav {
-        margin-right: 60px;
-    }
-
-
-}*/
+}
