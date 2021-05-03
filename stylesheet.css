@@ -374,7 +374,7 @@ i.fas.fa-dog {
     margin-left: -10px;
 }
 
-.hebergements > p {
+.hebergements__more {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 0;
@@ -513,6 +513,10 @@ i.fas.fa-dog {
     .button > i.fas.fa-search {
         display: none;
     }
+
+    .hebergements__more {
+        padding: 0% 10% 5% 10%;
+    }
 }
 
 /**************************/
@@ -630,7 +634,7 @@ i.fas.fa-dog {
         margin-top: 1.5rem;
     }
 
-    .hebergements > p {
+    .hebergements__more {
         margin-left: 5%;
         padding: 0;
         margin-top: 2rem;
