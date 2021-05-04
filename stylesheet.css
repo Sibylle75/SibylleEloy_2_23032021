@@ -81,27 +81,28 @@ body {
 /* Mise en forme de la section search */
 
 .search {
+    margin: 0 15px 0 22px;
     font-size: 1.1em;
 }
 .search__title {
-    margin: 32px 40px 15px 20px;
+    margin: 32px 20px 15px 0px;
     font-size: 22px;
 }
 
 .search__subtitle {
     font-size: 16px;
-    margin-left: 20px;
     margin-bottom: 35px;
 }
 
+.search__form {
+    display: flex;
+}
+
 .search__input {
-    position: absolute;
-    left: 70px;
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     padding: 15px;
-    width: 220px;
     border: solid #f2f2f2 1px;
 }
 
@@ -111,8 +112,6 @@ body {
 }
 
 i.fas.fa-map-marker-alt {
-    position: absolute;
-    left: 20px;
     color: black;
     background-color: #f2f2f2;
     padding: 18px 20px 18px 18px;
@@ -121,12 +120,12 @@ i.fas.fa-map-marker-alt {
 }
 
 .button > i.fas.fa-search {
-    position: absolute;
-    left: 300px;
     color: white;
     background-color:#0065FC;
     padding: 18px;
     border-radius: 16px;
+    position: absolute;
+    left: 300px;
 }
 
 .button__text {
@@ -134,9 +133,7 @@ i.fas.fa-map-marker-alt {
 }
 
 .search__filters {
-    position: relative;
-    top: 80px;
-    padding-left: 20px;
+    margin-top: 35px;
 }
 
 .search__filters > p {
@@ -158,8 +155,8 @@ i.fas.fa-map-marker-alt {
     border: solid #dadce0 2px;
     border-radius: 50px;
     height: 45px;
-    padding-right: 1rem;
-    margin-right: 1rem;
+    padding-right: 15px;
+    margin-right: 13px;
     margin-bottom: 1rem;
 }
 
@@ -198,8 +195,7 @@ i.fas.fa-dog {
 .search__information {
     display: flex;
     font-size: 16px;
-    margin-left: 20px;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .fas.fa-info.fa-xs {
@@ -222,7 +218,7 @@ i.fas.fa-dog {
 
 .ranking {
     background-color: #f2f2f2;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 
 .ranking__title {
@@ -404,7 +400,6 @@ i.fas.fa-dog {
 .activites__cards {
     padding: 30px 20px;
     margin-top: -5px;
-    max-width: 335px;
 }   
 
 .activites__cards > a {
@@ -485,23 +480,11 @@ i.fas.fa-dog {
 @media screen and (min-width: 768px) {
 
     .search {
-        margin-left: 20px;
-    }
-
-    .search__input {
-    position: absolute;
-    left: 90px;
-    }
-
-    i.fas.fa-map-marker-alt {
-        position: absolute;
-        left: 40px;
+        margin-left: 2rem;
     }
 
     .button__text {
         display: block;
-        position: absolute;
-        left: 320px;
         color: white;
         font-weight: bold;
         background-color:#0065FC;
@@ -514,8 +497,62 @@ i.fas.fa-dog {
         display: none;
     }
 
+    .ranking__cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px 20px;
+    }
+
+    .ranking__card {
+        margin: 0;
+    }
+
+    .hebergements {
+        display: block;
+    }
+
+    .hebergements__title {
+        padding: 1px 0;
+    }
+
+    .hebergements__title > h1 {
+        text-align: center;
+        margin: 2rem 0px;
+    }
+
+    .hebergements__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px 20px;
+    }
+
+    .hebergements__card {
+        margin-bottom: 0;
+    }
+
     .hebergements__more {
-        padding: 0% 10% 5% 10%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .activites__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px 20px;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .activites__card {
+        margin-bottom: 0px;
+    }
+
+    .footer__nav {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
@@ -526,6 +563,10 @@ i.fas.fa-dog {
 
 
 @media screen and (min-width: 1024px) {
+
+     main {
+        margin: 0 2rem;
+    }
 
     .header__logo {
         padding: 40px 70px 20px 50px;
@@ -563,12 +604,8 @@ i.fas.fa-dog {
         margin-right: 20px;
     }
 
-    .search__title {
-        margin-left: 30px;
-    }
-
-    .search__subtitle {
-        margin-left: 30px;
+    .search {
+        margin-left: 0px;
     }
 
     .search__form {
@@ -578,18 +615,15 @@ i.fas.fa-dog {
     }
 
     .search__filters {
-        height: 140px;
         display: flex;
-        padding-left: 30px;
     }
 
     .search__filters > p {
-        padding-right: 30px;
+        margin-right: 20px;
     }
 
     .search__information {
-        margin-left: 30px;
-        margin-top: 25px;
+        margin-top: 100px;
     }
 
     .ranking {
@@ -616,13 +650,10 @@ i.fas.fa-dog {
     .hebergementslist {
         display: grid;
         grid-template-columns: 1fr minmax(380px, 30%);
-        margin-right: 30px;
-        margin-left: 5px;
     }
 
 
     .hebergements {
-        margin-left: 4%;
         border-radius: 20px;
         background-color: #f2f2f2;
         align-items: flex-start;
