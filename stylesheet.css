@@ -224,6 +224,7 @@ i.fas.fa-dog {
 .ranking__title {
     margin: auto;
     width: 330px;
+    margin-bottom: -30px;
 }
 
 .fas.fa-chart-line {
@@ -304,7 +305,6 @@ i.fas.fa-dog {
     background-color: #fafbfc;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .hebergements > h1 {
@@ -320,7 +320,13 @@ i.fas.fa-dog {
 .hebergements__cards {
     padding: 10px 20px;
     margin-top: -5px;
-}   
+    align-self: center;
+}
+
+.hebergements__title {
+    align-self: center;
+    margin: 20px 0px 0px -20px;
+}
 
 .hebergements__cards > a {
     color: black;
@@ -374,7 +380,8 @@ i.fas.fa-dog {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 0;
-    padding: 0% 10% 5% 6%;
+    align-self: center;
+    margin: 0px 0px 0px -220px;
 }
 
 
@@ -387,10 +394,9 @@ i.fas.fa-dog {
     align-items: center;
 }
 
-.activites > h1 {
-    font-size: 22px;
-    margin-left: -8rem;
-    margin-top: 2rem;
+.activites__title {
+    align-self: center;
+    margin: 20px 0px 0px -100px;
 }
 
 .activites__cards {
@@ -520,11 +526,11 @@ i.fas.fa-dog {
 
     .hebergements__title {
         padding: 1px 0;
+        margin: 0px 0px 0px -20px;
     }
 
     .hebergements__title > h1 {
         text-align: center;
-        margin: 2rem 0px;
     }
 
     .hebergements__cards {
@@ -541,20 +547,20 @@ i.fas.fa-dog {
     .hebergements__more {
         text-align: center;
         padding: 20px 0;
+        margin: 0;
     }
 
     .activites {
         background-color: white;
         display: block;
-        margin-top: 3rem;
         margin-right: 1.5rem;
         margin-left: 1.5rem;
     }
 
     .activites__title {
-        margin-bottom: 0rem;
-        margin-top: 4rem;
         text-align: center;
+        margin: 0;
+        padding: 0 0 10px 0;
     }
 
     .activites__cards {
@@ -662,6 +668,7 @@ i.fas.fa-dog {
     .footer__nav {
         display: flex;
         justify-content: space-around;
+        padding-left: 0;
     }
 }
 
@@ -729,7 +736,7 @@ i.fas.fa-dog {
         grid-column: 2;
         grid-row: 1;
         border-radius: 20px;
-        padding-top: 1.5rem;
+        padding-top: 1rem;
     }
 
     .ranking__title {
@@ -761,7 +768,7 @@ i.fas.fa-dog {
 
 
     .hebergements__title > h1 {
-        margin: 2.5rem 0 1.5rem 1.5rem;
+        margin: 2rem 0 1.5rem 2.5rem;
         text-align: left;
     }
 
@@ -793,10 +800,12 @@ i.fas.fa-dog {
     }
 
     .activites__title {
+        margin-top: 50px;
         text-align: left;
     }
 
     .activites__cards {
+        margin-top: 0;
         gap: 0 20px;
     }
 
@@ -860,11 +869,10 @@ i.fas.fa-dog {
         display: flex;
         justify-content: space-between;
         max-width: 1100px;
-        margin-left: 10px;
+        padding-left: 1rem;
         margin-right: 100px;
         padding-top: 20px;
     }
-
 }
 
 /**************************/
@@ -899,10 +907,6 @@ i.fas.fa-dog {
     .ranking__cards {
         gap: 0px 20px;
     }
-
-    .hebergements__title {
-        margin-left: 1rem;
-    }
     
     .hebergements__cards {
         gap: 30px 10px;
@@ -924,6 +928,10 @@ i.fas.fa-dog {
 
     .c4 > .activitescard__content > h2 {
         transform: translateY(-0%);
+    }
+
+    .footer__nav {
+        padding-left: 1.5rem;
     }
 }
 
@@ -964,6 +972,6 @@ i.fas.fa-dog {
     }
 
     .c2 > .activitescard__img > img {
-        object-position: -1px -140px;
+        object-position: -1px -180px;
     }
 }
