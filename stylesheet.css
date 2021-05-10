@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 20px 20px 30px;
+    padding: 25px 30px 20px 30px;
 }
 
 .header__logo > img {
@@ -64,7 +64,7 @@ body {
     text-decoration: none;
 }
  
-.header__nav a:hover {
+.header__nav > ul > li > a:hover {
     color: #0065FC;
 }
 
@@ -72,7 +72,6 @@ body {
     text-decoration: none ;
     border-bottom: solid #0065FC 3px;
 }
-
 
 /** Mise en forme du main **/
 
@@ -609,7 +608,7 @@ i.fas.fa-dog {
 
     .c2 > .activitescard__img > img {
         height: 175px;
-        object-position: 1px 1px;
+        object-position: 1px -100px;
     }
 
     .c3 {
@@ -685,7 +684,7 @@ i.fas.fa-dog {
     }
 
     .header__logo {
-        padding: 40px 70px 20px 32px;
+        padding: 40px 32px 20px 32px;
     }
 
     .header__nav {
@@ -699,7 +698,7 @@ i.fas.fa-dog {
     .header__nav > ul > li {
         padding-top: 55px;
         padding-right: 30px;
-        padding-left: 30px;
+        padding-left: 50px;
         border-bottom: none;
         width: 105px;
        
@@ -768,15 +767,16 @@ i.fas.fa-dog {
 
 
     .hebergements__title > h1 {
-        margin: 2rem 0 1.5rem 2.5rem;
+        margin: 2rem 0 1.5rem 3.5rem;
         text-align: left;
     }
 
     .hebergements__more {
-        margin-left: 5%;
         padding: 0;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        margin-left: 2rem;
+        text-align: left;
     }
 
     .hebergements__cards {
@@ -829,6 +829,7 @@ i.fas.fa-dog {
 
     .header__logo {
         padding-left: 40px;
+        padding-right: 40px;
 
     }
     
@@ -838,10 +839,6 @@ i.fas.fa-dog {
 
     .hebergements__card {
         margin: 0;
-    }
-
-    .hebergementslist {
-        margin-left: -5px;
     }
 
     .ranking__title {
@@ -855,10 +852,6 @@ i.fas.fa-dog {
     .hebergements__cards {
         gap: 30px 10px;
         justify-content: space-evenly;
-    }
-
-    .hebergements__more {
-        text-align: left;
     }
 
     .activites {
@@ -887,6 +880,7 @@ i.fas.fa-dog {
 
     .header__logo {
         padding-left: 48px;
+        padding-right: 48px;
     }
 
     .search__information {
@@ -908,11 +902,11 @@ i.fas.fa-dog {
 
     .hebergements__cards {
         justify-content: space-evenly;
-        gap: 30px 15px;
+        gap: 40px 15px;
     }
 
     .hebergements__title > h1 {
-        margin: 2.5rem 0 2rem 2.5rem;
+        margin: 2.5rem 0 2rem 3.5rem;
     }
 
     .c2 > .activitescard__img > img {
