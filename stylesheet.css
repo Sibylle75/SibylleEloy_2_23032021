@@ -159,6 +159,10 @@ i.fas.fa-map-marker-alt {
     margin-bottom: 1rem;
 }
 
+.search__filtercards__item:hover {
+    color: #0065FC;
+}
+
 i.fas.fa-money-bill-wave {
     background-color: RGB(215, 227, 274);
     margin-right: 10px;
