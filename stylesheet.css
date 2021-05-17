@@ -247,6 +247,11 @@ i.fas.fa-dog {
     align-items: center;
 }
 
+.ranking__cards > a {
+    color: black;
+    text-decoration: none;
+}
+
 .ranking__card {
     display: flex;
     margin: 10px 20px;
